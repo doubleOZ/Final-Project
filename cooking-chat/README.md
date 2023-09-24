@@ -5,19 +5,19 @@ This is my cooking-chat app
 First, you will need to set API keys and secrets in a .env file. I have left that out for security reasons.
 Required Keys and Secrets
 
-NEXTAUTH_URL=http://localhost:3000\n
+NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET={run command openssl rand -base64 32 and copy in the result}
 
-GOOGLE_CLIENT_ID=\n
+GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 
-GITHUB_ID=\n
+GITHUB_ID=
 GITHUB_SECRET=
 
-MONGODB_URI=\n
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=\n
-NEXT_PUBLIC_PUSHER_APP_KEY=\n
-PUSHER_APP_ID=\n
+MONGODB_URI=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+NEXT_PUBLIC_PUSHER_APP_KEY=
+PUSHER_APP_ID=
 PUSHER_SECRET=
 
 Tests can be run with npm test
