@@ -3,7 +3,7 @@
 import { FullConversationType } from "@/app/types";
 import useConversation from "@/hooks/useConversation";
 import { pusherClient } from "@/libs/pusher";
-import { Conversation, User } from "@prisma/client";
+import { User } from "@prisma/client";
 import clsx from "clsx";
 import { find } from "lodash";
 import { useSession } from "next-auth/react";
@@ -14,7 +14,7 @@ import ConversationBox from "./ConversationBox";
 interface ConversationListProps {
   initialItems: FullConversationType[];
   users: User[];
-  title?: string;
+  // title?: string;
 }
 
 const ConversationList: React.FC<ConversationListProps> = ({
