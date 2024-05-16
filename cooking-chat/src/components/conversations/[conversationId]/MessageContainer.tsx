@@ -112,8 +112,8 @@ const MessageContainer: React.FC<MessageContainerProps> = ({
 
           <div className="">
             <div className={message}>
-              <div className=" flex items-center gap-1">
-                <div className="text-sm font-medium text-gray-600">
+              <div className=" flex items-center gap-1 flex-wrap ">
+                <div className="text-sm font-medium text-gray-600 ">
                   {isOwnMessage ? "" : data.sender.name}
                 </div>
               </div>
@@ -126,13 +126,13 @@ const MessageContainer: React.FC<MessageContainerProps> = ({
                   className="w-auto h-auto"
                 />
               ) : (
-                <div className=" flex gap-3 items-end">
+                <div className=" flex gap-3 items-end ">
                   <div className="">{data.body}</div>
-                  <div className="text-xs text-gray-600">
+                  <div className="text-xs text-gray-600 ">
                     {format(new Date(data?.createAt), "p")}
                   </div>
                   {isLast && isOwnMessage && seenList.length > 0 && (
-                    <div className="text-gray-600">
+                    <div className="text-gray-600 ">
                       <Check />
                     </div>
                   )}
